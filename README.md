@@ -1,5 +1,6 @@
-# TOI
+### TOI Intership web-development task
+<br />
+-to see web page go to INTERNSHIP TASK\dist\index.html
+-also see GitHub repo - https://github.com/arpit-alne/TOI.git
 
-Intership web-development task
-
-to see web page go to INTERNSHIP TASK\dist\index.html
+have a nice day..😊

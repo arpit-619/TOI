@@ -1,8 +1,11 @@
-/* CSS Document */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+body {
+  text-align: center;
+}
+
 h1 {
   font-family: "CoreCircus", sans-serif;
   font-size: 14vw;
@@ -97,9 +100,9 @@ a {
 }
 
 h1 {
-  margin-top: 100px;
+  margin-top: 90px;
   text-align: center;
-  font-size: 60px;
+  font-size: 70px;
   font-family: "Bree Serif", "serif";
 }
 
@@ -114,8 +117,8 @@ p {
 nav {
   position: fixed;
   z-index: 9999;
-  margin: 40px 0;
-  background-color: #e64a19;
+  margin: 30px 0;
+  background-color: #ffcc00;
   left: 600px;
 }
 
@@ -128,7 +131,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  background-color: #e64a19;
+  background-color: #000000;
 }
 
 nav a {
@@ -142,7 +145,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #000000;
+  background-color: #ffcc00;
 }
 
 /* Hide Dropdowns by Default */
@@ -166,37 +169,12 @@ nav ul ul li {
   position: relative;
 }
 
-/* Change this in order to change the Dropdown symbol */
 li > a:after {
   content: " +";
 }
 
 li > a:only-child:after {
   content: "";
-}
-
-/* Override UGG site */
-#main {
-  width: 100%;
-  padding: 0;
-}
-
-.content-asset p {
-  margin: 0 auto;
-}
-
-.breadcrumb {
-  display: none;
-}
-
-/* Helpers */
-/**************************/
-.margin-top-10 {
-  padding-top: 10px;
-}
-
-.margin-bot-10 {
-  padding-bottom: 10px;
 }
 
 /* Typography */
@@ -210,7 +188,6 @@ li > a:only-child:after {
   font-weight: 400;
   text-transform: uppercase;
   z-index: 10;
-  opacity: 0.8;
 }
 
 #parallax-world-of-ugg h3 {
@@ -223,7 +200,7 @@ li > a:only-child:after {
   text-transform: uppercase;
   z-index: 10;
   opacity: 0.8;
-  padding: 0 10%;
+  padding: 0 4%;
 }
 
 #parallax-world-of-ugg p {
@@ -234,7 +211,7 @@ li > a:only-child:after {
   font-weight: 45;
   z-index: 10;
   opacity: 0.8;
-  padding: 0 10%;
+  padding: 0 13%;
 }
 
 /* Section - Parallax */
@@ -246,12 +223,12 @@ li > a:only-child:after {
   position: relative;
   top: 100px;
   width: 100%;
-  background-image: url(https://webstockreview.net/images/clipart-bible-youth-bible-study-19.png);
+  background: url("https://webstockreview.net/images/clipart-bible-youth-bible-study-19.png");
   background-attachment: fixed;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
-  background-position: top center;
+  background-position: center top;
 }
 
 #parallax-world-of-ugg .parallax-two {
@@ -266,6 +243,277 @@ li > a:only-child:after {
   -webkit-background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.parallax-3 {
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.card-grp {
+  margin: 0 10%;
+}
+
+.quote-container {
+  margin: 0 20%;
+  font-family: "Oswald", sans-serif;
+  width: auto;
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+  font-size: 1.75rem;
+}
+
+.fa-quote-left {
+  font-size: 4rem;
+  color: #ffcc00;
+}
+
+.quote-author {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.card {
+  border-radius: 10px;
+  display: inline-block;
+  height: 200px;
+  margin: 1rem;
+  position: relative;
+  width: 300px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 11px "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-rw {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+main {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 10em "Oswald", sans-serif;
+  color: #9b9b9b;
+  line-height: 1;
+}
+
+footer {
+  background: #373737;
+  margin-top: auto;
+  width: 100%;
+}
+
+.footer-list-top {
+  width: 335px;
+}
+
+.footer-list-top > li {
+  text-align: left;
+}
+
+.footer-list-top:nth-child(1) > p:nth-child(2) {
+  margin-top: -5px;
+  text-align: left;
+}
+
+.footer-list-header {
+  color: #fff;
+  font: 2.3vw "Oswald", sans-serif;
+  margin-bottom: 0px;
+}
+
+.footer-list-anchor {
+  font: 1.3em "Open Sans", sans-serif;
+}
+
+.footer-social-section {
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 5px;
+}
+
+.footer-social-section::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 10px;
+  border-top: 1px solid #ccc;
+  width: calc(100% - 20px);
+}
+
+.footer-social-overlap {
+  position: relative;
+  z-index: 2;
+  background: #373737;
+}
+
+.footer-social-connect {
+  display: flex;
+  align-items: center;
+  font: 3.5em "Oswald", sans-serif;
+  color: #fff;
+}
+
+.footer-social-small {
+  font-size: 0.6em;
+  padding: 0px 20px;
+}
+
+.footer-social-overlap > a {
+  font-size: 3em;
+}
+
+.footer-social-overlap > a:not(:first-child) {
+  margin-left: 0.38em;
+}
+
+.footer-bottom-section {
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.footer-bottom-wrapper {
+  font-size: 1.5em;
+  margin: 0 34%;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-list-header {
+    font-size: 2em;
+  }
+  .footer-list-anchor {
+    font-size: 1.1em;
+  }
+  .footer-social-connect {
+    font-size: 2.5em;
+  }
+  .footer-social-overlap > a {
+    font-size: 2.24em;
+  }
+  .footer-bottom-wrapper {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  main {
+    font-size: 5em;
+  }
+  .footer-list-top {
+    width: 100%;
+  }
+  .footer-list-header {
+    font-size: 3em;
+  }
+  .footer-list-anchor {
+    font-size: 1.5em;
+  }
+  .footer-social-section {
+    justify-content: center;
+  }
+  .footer-social-section::after {
+    top: 25%;
+  }
+  .footer-social-connect {
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+  .footer-social-overlap {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-social-icons-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+  .footer-social-overlap > a:not(:first-child) {
+    margin-left: 20px;
+  }
+  .footer-bottom-section {
+    padding: 0 5px 10px 5px;
+  }
+  .footer-bottom-wrapper {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .footer-social-overlap > a {
+    margin: auto;
+  }
+  .footer-social-overlap > a:not(:first-child) {
+    margin-left: 0;
+  }
+  .footer-bottom-rights {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .footer-list-header {
+    font-size: 2.2em;
+  }
+  .footer-list-anchor {
+    font-size: 1.2em;
+  }
+  .footer-social-connect {
+    font-size: 2.4em;
+  }
+  .footer-social-overlap > a {
+    font-size: 2.24em;
+  }
+  .footer-bottom-wrapper {
+    font-size: 1.3em;
+  }
 }
 
 /* Media Queries */
